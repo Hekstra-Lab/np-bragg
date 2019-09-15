@@ -1,6 +1,8 @@
 # np-bragg
 A very simplistic x-ray diffraction simulator for teaching purposes. 
 
+![Simulated Laue Image](laue_sim.png)
+
 ### nanobragg in numpy
 The goal of this project was to implement something akin to James Holton's authoritative nanobragg x-ray diffraction simulator in numpy. 
 This was undertaken mostly as a learning exercise and a feasibility study. 
