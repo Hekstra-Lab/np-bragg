@@ -40,3 +40,8 @@ It implements a sparse approximation of the diffraction equation which works by 
 Essentially, it knows it shouldn't spend time and memory computing the contribution of every HKL to every pixel.
 Instead it works by building up a list of which HKL is likely to have a significant contribution to which pixel and only summing over that list. 
 This algorithm is probably good enough to use in production if it can be ported to tensorflow or torch in a way that preserves its memory saving advantages. 
+
+
+#### np-bragg-biocars-spectrum.ipynb
+This is essentially the same as np-bragg-sparse.ipynb except it imports an experimental X-ray spectrum from BioCARS. 
+This is the most realistic simulation code thus far, but the spectrum has 166 scan points, so it is rather slow to compute a full image. 
